@@ -153,7 +153,7 @@ header .nav {
     overflow: hidden;
 }
 
-.circular-bg .main-dish {
+.main-dish {
     position: absolute;
     transform: translate(80%, 1000px) translate(-50%, -50%);
 }
@@ -164,9 +164,7 @@ header .nav {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    /* border: dashed 3px #7dae62; */
-    border-right: dashed 5px #7dae62;
-    border-top: dashed 5px #7dae62;
+    border: dashed 3px #7dae62;
 }
 
 .circular-menu div {
