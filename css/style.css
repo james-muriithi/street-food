@@ -33,6 +33,7 @@ body{
     padding: 0;
     height: 100%;
     font-family: Nunito, serif;
+    overflow-x: hidden;
 }
 
 a{
@@ -49,6 +50,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
 }
 
 header .nav{
@@ -96,6 +98,21 @@ header .nav{
 /* hero section */
 #home{
     background-color: #e5e5e5;
+}
+
+.circular-bg{
+    height: 1200px;
+    width: 1200px;
+    background-color: #b8e79c;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    transform: translate(100px, -55%) rotate(-45deg);
+}
+
+.circular-bg .main-dish{
+    position: absolute;
+    transform: translate(40%, 880px) translate(-50%, -50%);
 }
 
 
