@@ -1,0 +1,109 @@
+/* 
+primary colors
+(green ish)
+#b8e79c
+rgba(184,231,156,255)
+
+button
+#6cb840
+
+
+// yellow
+#eaab1b
+
+
+// hero bg
+#e5e5e5
+
+
+//hot deals bg
+#c9ecb5
+
+// footer bg
+#f1faec
+
+*/
+/* import google font */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+/* global styles */
+html,
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Nunito, serif;
+}
+
+a{
+    text-decoration: none;
+    color: #080808;
+}
+
+
+
+/* header */
+header{
+    padding: 20px 20px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header .nav{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+}
+.right-nav,
+.left-nav{
+    width: 45%;
+}
+
+.right-nav{
+    margin-left: auto;
+}
+
+.nav .nav-item{
+    padding: 0 15px;
+    font-size: 19px;
+    font-weight: 550;
+}
+
+/* responsive */
+
+@media screen and (max-width: 767px) {
+    header{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+
+
+/* utilities */
+.d-flex{
+    display: flex;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-items-center{
+    align-items: center;
+}
