@@ -426,8 +426,14 @@ button.order-now:hover {
     padding: 20px 20px 30px;
     border-bottom-right-radius: 50px;
     max-width: 300px;
-    width: 100%;
     margin:0 30px 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.food-card:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .food-card .food-title>h2{
@@ -436,12 +442,13 @@ button.order-now:hover {
 }
 
 .food-card .food-image img{
-    height: 180px;
+    height: 150px;
     width: 180px;
 }
 .food-card .food-image{
     position: absolute;
     margin-left: -90px;
+    margin-top: 20px;
 }
 
 .food-card .food-description{
@@ -455,8 +462,17 @@ button.order-now:hover {
     line-height: 30px;
     color: #252525;
     margin: 0;
-
 }
+
+/* menu section responsiveness */
+
+@media screen and (max-width: 768px) {
+    .food-card{
+        flex: 1 0 50%;
+        margin-right: 10px;
+    }
+}
+
 /* utilities */
 
 .d-flex {
