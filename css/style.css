@@ -36,6 +36,9 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: Nunito, serif;
+}
+
+html{
     overflow-x: hidden;
 }
 
@@ -221,7 +224,8 @@ button.order-now:hover{
 
 /* eat together section */
 #eat-together{
-    margin-top: 80px;
+    padding-top: 80px;
+    height: 300px;
 }
 
 /* utilities */
