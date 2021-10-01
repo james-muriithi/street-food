@@ -717,6 +717,7 @@ footer .days+p{
 
 .right img{
     margin-top: -100px;
+    display: block;
 }
 
 .right .footer-btn{
