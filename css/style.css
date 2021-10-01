@@ -218,6 +218,12 @@ button.order-now:hover{
     transform: rotate(-135deg) translate(19em) rotate(0deg);
 }
 
+
+/* eat together section */
+#eat-together{
+    margin-top: 80px;
+}
+
 /* utilities */
 
 .d-flex {
