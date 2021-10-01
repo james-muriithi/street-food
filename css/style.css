@@ -24,21 +24,25 @@ button
 
 */
 
+
 /* import google font */
+
 
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap");
+
 /* global styles */
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: Nunito, serif;
 }
 
-html{
+html {
     overflow-x: hidden;
 }
 
@@ -46,6 +50,7 @@ a {
     text-decoration: none;
     color: #080808;
 }
+
 
 /* header */
 
@@ -65,7 +70,8 @@ header .nav {
     justify-content: space-around;
 }
 
-.right-nav, .left-nav {
+.right-nav,
+.left-nav {
     width: 42%;
 }
 
@@ -91,14 +97,38 @@ header .nav {
     font-weight: 900;
 }
 
-/* responsive */
+
+/* header responsivity */
+
+@media screen and (max-width: 1368px) {
+    .nav .nav-item {
+        font-size: 16px;
+    }
+}
 
 @media screen and (max-width: 767px) {
     header {
         padding-left: 5px;
         padding-right: 5px;
     }
+    .left-nav,
+    .right-nav {
+        display: none !important;
+    }
+    .center-logo {
+        width: 100%;
+    }
+    .center-logo div {
+        text-align: left !important;
+        display: flex;
+        align-items: center;
+    }
+    .center-logo h1 {
+        margin-bottom: 0;
+        padding-left: 10px;
+    }
 }
+
 
 /* hero section */
 
@@ -143,7 +173,7 @@ header .nav {
     font-size: 19px;
 }
 
-button.order-now{
+button.order-now {
     margin-top: 60px;
     padding: 20px 50px;
     font-size: 21px;
@@ -157,14 +187,14 @@ button.order-now{
     transition: all 0.3s linear;
 }
 
-button.order-now:hover{
+button.order-now:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background: #64aa3c;
 }
 
 .circular-bg {
-    height: 1400px;
-    width: 1400px;
+    height: 1200px;
+    width: 1200px;
     background-color: #b8e79c;
     position: absolute;
     top: 0;
@@ -222,11 +252,47 @@ button.order-now:hover{
 }
 
 
+/* home responsiveness */
+
+@media screen and (max-width: 1440px) {
+    .hero {
+        padding-top: 20px;
+    }
+    .hero h1 {
+        font-weight: 900;
+        font-size: 35px;
+    }
+    .hero h3 {
+        font-size: 30px;
+        color: #404040;
+        margin-top: 16px;
+        margin-bottom: 0px;
+    }
+    .hero p {
+        line-height: 28px;
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+    button.order-now {
+        margin-top: 30px;
+        padding: 15px 25px;
+        font-size: 17px;
+    }
+    .circular-bg {
+        width: 1000px;
+        height: 1000px;
+        transform: translate(80px, -50%) rotate(-45deg);
+    }
+}
+
+
 /* eat together section */
-#eat-together{
+
+#eat-together {
     padding-top: 80px;
     height: 300px;
 }
+
 
 /* utilities */
 
