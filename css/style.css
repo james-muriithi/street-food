@@ -24,18 +24,14 @@ button
 
 */
 
-
 /* import google font */
-
 
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap'); */
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap");
-
 /* global styles */
 
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -50,7 +46,6 @@ a {
     text-decoration: none;
     color: #080808;
 }
-
 
 /* header */
 
@@ -70,8 +65,7 @@ header .nav {
     justify-content: space-around;
 }
 
-.right-nav,
-.left-nav {
+.right-nav, .left-nav {
     width: 42%;
 }
 
@@ -97,10 +91,9 @@ header .nav {
     font-weight: 900;
 }
 
-
 /* header responsivity */
 
-@media screen and (max-width: 1368px) {
+@media screen and (max-width: 1440px) {
     .nav .nav-item {
         font-size: 16px;
     }
@@ -111,8 +104,7 @@ header .nav {
         padding-left: 5px;
         padding-right: 5px;
     }
-    .left-nav,
-    .right-nav {
+    .left-nav, .right-nav {
         display: none !important;
     }
     .center-logo {
@@ -129,7 +121,6 @@ header .nav {
     }
 }
 
-
 /* hero section */
 
 #home {
@@ -140,8 +131,8 @@ header .nav {
     display: flex;
     align-items: center;
     padding-left: 50px;
-    z-index: 100;
     position: relative;
+    z-index: 100;
 }
 
 .hero div {
@@ -176,7 +167,7 @@ header .nav {
 button.order-now {
     margin-top: 60px;
     padding: 20px 50px;
-    font-size: 21px;
+    font-size: 17px;
     border-radius: 50px;
     border: none;
     background: #6cb840;
@@ -207,18 +198,30 @@ button.order-now:hover {
 
 .main-dish {
     position: absolute;
-    transform: translate(50%, 1000px) translate(-50%, -50%);
+    transform: translateX(50%) translateX(60%);
     right: 760px;
-    top: -34%;
+    top: 60%;
 }
 
 .circular-menu {
     position: absolute;
-    transform: translate(50%, 800px) translate(-70%, -20%) rotate(15deg);
-    width: 600px;
-    height: 600px;
+    transform: translate(40%, 800px) translate(-55%, -25%) rotate(5deg);
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     border: dashed 3px #7dae62;
+}
+
+.small-screen-circular-bg {
+    height: 800px;
+    width: 800px;
+    background-color: #b8e79c;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+    z-index: 0;
 }
 
 .circular-menu div {
@@ -232,25 +235,24 @@ button.order-now:hover {
 }
 
 .circular-menu div:first-child {
-    transform: rotate(-45deg) translate(19em) rotate(0deg);
+    transform: rotate(-45deg) translate(15em);
 }
 
 .circular-menu div:nth-child(2) {
-    transform: rotate(0deg) translate(19em) rotate(0deg);
+    transform: rotate(0deg) translate(15em);
 }
 
 .circular-menu div:nth-child(3) {
-    transform: rotate(45deg) translate(19em) rotate(0deg);
+    transform: rotate(45deg) translate(15em);
 }
 
 .circular-menu div:nth-child(4) {
-    transform: rotate(-90deg) translate(19em) rotate(0deg);
+    transform: rotate(-90deg) translate(15em);
 }
 
 .circular-menu div:nth-child(5) {
-    transform: rotate(-135deg) translate(19em) rotate(0deg);
+    transform: rotate(-135deg) translate(15em);
 }
-
 
 /* home responsiveness */
 
@@ -279,12 +281,77 @@ button.order-now:hover {
         font-size: 17px;
     }
     .circular-bg {
-        width: 1000px;
-        height: 1000px;
-        transform: translate(80px, -50%) rotate(-45deg);
+        transform: translate(260px, -50%) rotate(-45deg);
+    }
+    .main-dish {
+        top: 70%;
+        right: 40%;
     }
 }
 
+@media screen and (max-width: 1368px) {
+    .hero {
+        padding-top: 20px;
+    }
+    .hero h1 {
+        font-weight: 900;
+        font-size: 30px;
+    }
+    .hero h3 {
+        font-size: 25px;
+        color: #404040;
+        margin-top: 16px;
+        margin-bottom: 0px;
+    }
+    .hero p {
+        line-height: 25px;
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+    .circular-bg {
+        transform: translate(300px, -65%) rotate(-45deg);
+    }
+    .main-dish {
+        top: 60%;
+        right: 38%;
+    }
+    .main-dish img {
+        height: 120px;
+        width: 120px;
+    }
+    .circular-menu {
+        width: 400px;
+        height: 400px;
+    }
+    .circular-menu div * {
+        transform: translate(-2em);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1386px) {
+    .main-dish {
+        top: 50%;
+        right: 38%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .circular-bg, .main-dish {
+        display: none;
+    }
+    .small-screen-circular-bg{
+        display: initial !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #home .hero{
+        padding: 50px 15px;
+    }
+    button.order-now {
+        margin-top: 50px;
+    }
+}
 
 /* eat together section */
 
@@ -292,7 +359,6 @@ button.order-now:hover {
     padding-top: 80px;
     height: 300px;
 }
-
 
 /* utilities */
 
