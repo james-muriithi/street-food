@@ -470,6 +470,107 @@ button.order-now:hover {
         margin-right: 10px;
     }
 }
+@media screen and (max-width: 390px) {
+    .food-card .food-description>p{
+        font-size: 17px;
+        line-height: 25px;
+    }
+}
+/* hot deals */
+#hot-deals{
+    padding: 50px 20px;
+    background-color: #c9ecb5;
+}
+
+#hot-deals div:nth-of-type(2){
+    flex-wrap: wrap;
+}
+
+#hot-deals .section-title{
+    font-size: 23px;
+    text-align: center;
+}
+#hot-deals .section-title span{
+    color: #6cb840;
+}
+
+#hot-deals .section-image img:first-child{
+    height: 400px;
+    margin-left: auto;
+}
+#hot-deals .section-image img:nth-child(2){
+    height: 300px;
+}
+#hot-deals .section-image img.img-burger{
+    margin-top: -250px;
+    margin-left: 200px;
+}
+#hot-deals .section-image{
+    flex: 1 0 50%;
+    text-align: center;
+}
+
+#hot-deals .section-description h3{
+    font-size: 45px;
+    color: #6cb840;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#hot-deals .section-description {
+    flex: 1 0 50%;
+    width: 90%;
+}
+#hot-deals .section-description .description{
+    width: 50%;
+}
+#hot-deals .section-description .food-title{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* hot deals responsiveness */
+@media screen and (max-width: 1150px) {
+    #hot-deals .section-description h3{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 992px) {
+    #hot-deals .section-image{
+        flex: 1 0 100%;
+        order: 2;
+    }
+    #hot-deals .section-description {
+        flex: 1 0 100%;
+        text-align: center;
+        order: 1;
+    }
+    #hot-deals .section-description .description{
+        width: 100%;
+    }
+
+    #hot-deals .section-image img:first-child{
+        height: 300px;
+        width: 200px;
+    }
+    #hot-deals .section-image img:nth-child(2){
+        height: 200px;
+        width: 250px;
+    }
+    #hot-deals .section-image img.img-burger{
+        margin-top: -250px;
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 460px) {
+    #hot-deals .section-description h3{
+        font-size: 30px;
+    }
+}
+
+/* contact us section */
+
+
+
 
 /* utilities */
 
