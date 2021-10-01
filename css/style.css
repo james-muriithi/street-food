@@ -25,6 +25,7 @@ button
 */
 
 /* import google font */
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,400;1,700&display=swap');
 /* global styles */
 
@@ -42,6 +43,23 @@ html {
 a {
     text-decoration: none;
     color: #080808;
+}
+
+.section-title h1 {
+    font-weight: 500;
+}
+
+.btn {
+    padding: 20px 50px;
+    font-size: 17px;
+    border-radius: 50px;
+    border: none;
+    background: #6cb840;
+    color: #fefefe;
+    font-weight: 550;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all 0.3s linear;
 }
 
 /* header */
@@ -163,16 +181,6 @@ header .nav {
 
 button.order-now {
     margin-top: 60px;
-    padding: 20px 50px;
-    font-size: 17px;
-    border-radius: 50px;
-    border: none;
-    background: #6cb840;
-    color: #fefefe;
-    font-weight: 550;
-    cursor: pointer;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    transition: all 0.3s linear;
 }
 
 button.order-now:hover {
@@ -183,6 +191,7 @@ button.order-now:hover {
 .circular-bg {
     height: 1200px;
     width: 1200px;
+    /* #649549 */
     background-color: #b8e79c;
     position: absolute;
     top: 0;
@@ -336,13 +345,13 @@ button.order-now:hover {
     .circular-bg, .main-dish {
         display: none;
     }
-    .small-screen-circular-bg{
+    .small-screen-circular-bg {
         display: initial !important;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #home .hero{
+    #home .hero {
         padding: 50px 15px;
     }
     button.order-now {
@@ -356,105 +365,113 @@ button.order-now:hover {
     padding: 80px 20px;
     flex-wrap: wrap;
 }
-#eat-together .section-image{
+
+#eat-together .section-image {
     width: 50%;
 }
 
-#eat-together .section-image img{
+#eat-together .section-image img {
     width: 100%;
     height: auto;
 }
 
-#eat-together .section-description{
+#eat-together .section-description {
     /* padding-top: 40px; */
     width: 30%;
     text-align: center;
 }
 
-#eat-together .section-description h3{
+#eat-together .section-description h3 {
     font-size: 40px;
-    color: #ffd77c;
+    color: #eaab1b;
+    font-weight: 500;
+    opacity: 0.7;
 }
 
-#eat-together .section-description p{
+#eat-together .section-description p {
     font-size: 23px;
     line-height: 33px;
     color: #252525;
 }
 
 /* eat together responsive */
+
 @media screen and (max-width: 768px) {
-    #eat-together div{
+    #eat-together div {
         display: block;
     }
-    #eat-together .section-image{
+    #eat-together .section-image {
         width: 100%;
     }
-    #eat-together .section-description{
+    #eat-together .section-description {
         width: 100%;
     }
-    #eat-together .section-description p{
+    #eat-together .section-description p {
         font-size: 20px;
         line-height: 33px;
     }
 }
 
 /* menu section */
-#menu{
+
+#menu {
     padding: 50px 20px;
     background-color: #eaf3e4;
 }
 
-.menu{
+.menu {
     padding: 30px 0 0;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-#menu .section-title{
+#menu .section-title {
     font-size: 23px;
 }
-#menu .section-title span{
+
+#menu .section-title span {
     color: #6cb840;
 }
-.food-card{
-    flex: 1 0 33%; 
+
+.food-card {
+    flex: 1 0 33%;
     background: #fff;
     padding: 20px 20px 30px;
     border-bottom-right-radius: 50px;
     max-width: 300px;
-    margin:0 30px 40px;
+    margin: 0 30px 40px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     transition: all 0.2s linear;
     cursor: pointer;
 }
 
-.food-card:hover{
+.food-card:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.food-card .food-title>h2{
+.food-card .food-title>h2 {
     margin: 0;
     font-size: 20px;
     font-weight: 700;
 }
 
-.food-card .food-image img{
+.food-card .food-image img {
     height: 150px;
     width: 180px;
 }
-.food-card .food-image{
+
+.food-card .food-image {
     position: absolute;
     margin-left: -90px;
     margin-top: 20px;
 }
 
-.food-card .food-description{
+.food-card .food-description {
     padding-top: 20px;
     margin-left: 70px;
 }
 
-.food-card .food-description>p{
+.food-card .food-description>p {
     text-align: center;
     font-size: 18px;
     line-height: 30px;
@@ -465,77 +482,89 @@ button.order-now:hover {
 /* menu section responsiveness */
 
 @media screen and (max-width: 768px) {
-    .food-card{
+    .food-card {
         flex: 1 0 50%;
         margin-right: 10px;
     }
 }
+
 @media screen and (max-width: 390px) {
-    .food-card .food-description>p{
+    .food-card .food-description>p {
         font-size: 17px;
         line-height: 25px;
     }
 }
+
 /* hot deals */
-#hot-deals{
+
+#hot-deals {
     padding: 50px 20px;
     background-color: #c9ecb5;
 }
 
-#hot-deals div:nth-of-type(2){
+#hot-deals div:nth-of-type(2) {
     flex-wrap: wrap;
 }
 
-#hot-deals .section-title{
+#hot-deals .section-title {
     font-size: 23px;
     text-align: center;
 }
-#hot-deals .section-title span{
+
+#hot-deals .section-title span {
     color: #6cb840;
 }
 
-#hot-deals .section-image img:first-child{
+#hot-deals .section-image img:first-child {
     height: 400px;
     margin-left: auto;
 }
-#hot-deals .section-image img:nth-child(2){
+
+#hot-deals .section-image img:nth-child(2) {
     height: 300px;
 }
-#hot-deals .section-image img.img-burger{
+
+#hot-deals .section-image img.img-burger {
     margin-top: -250px;
     margin-left: 200px;
 }
-#hot-deals .section-image{
+
+#hot-deals .section-image {
     flex: 1 0 50%;
     text-align: center;
 }
 
-#hot-deals .section-description h3{
+#hot-deals .section-description h3 {
     font-size: 45px;
     color: #6cb840;
     font-weight: 500;
     text-transform: uppercase;
 }
+
 #hot-deals .section-description {
     flex: 1 0 50%;
     width: 90%;
 }
-#hot-deals .section-description .description{
+
+#hot-deals .section-description .description {
     width: 50%;
 }
-#hot-deals .section-description .food-title{
+
+#hot-deals .section-description .food-title {
     font-size: 30px;
     font-weight: 600;
 }
 
 /* hot deals responsiveness */
+
 @media screen and (max-width: 1150px) {
-    #hot-deals .section-description h3{
+    #hot-deals .section-description h3 {
         font-size: 35px;
     }
 }
+
 @media screen and (max-width: 992px) {
-    #hot-deals .section-image{
+    #hot-deals .section-image {
         flex: 1 0 100%;
         order: 2;
     }
@@ -544,32 +573,102 @@ button.order-now:hover {
         text-align: center;
         order: 1;
     }
-    #hot-deals .section-description .description{
+    #hot-deals .section-description .description {
         width: 100%;
     }
-
-    #hot-deals .section-image img:first-child{
+    #hot-deals .section-image img:first-child {
         height: 300px;
         width: 200px;
     }
-    #hot-deals .section-image img:nth-child(2){
+    #hot-deals .section-image img:nth-child(2) {
         height: 200px;
         width: 250px;
     }
-    #hot-deals .section-image img.img-burger{
+    #hot-deals .section-image img.img-burger {
         margin-top: -250px;
         margin-left: 100px;
     }
 }
+
 @media screen and (max-width: 460px) {
-    #hot-deals .section-description h3{
+    #hot-deals .section-description h3 {
         font-size: 30px;
     }
 }
 
 /* contact us section */
 
+#contact-us {
+    padding: 50px 20px;
+    background: #fff5dd;
+}
 
+#contact-us .section-title {
+    font-size: 23px;
+    text-align: center;
+}
+
+#contact-us .section-title span {
+    color: #6cb840;
+}
+
+#contact-us .contact-section {
+    width: 30%;
+    margin: auto;
+}
+
+#contact-us .contact-section div {
+    text-align: center;
+}
+
+#contact-us .contact-section p {
+    line-height: 28px;
+    font-size: 18px;
+}
+
+#contact-us input.form-control{
+    margin-top: 30px;
+    display: block;
+    padding: 15px 30px;
+    line-height: 20px;
+    width: 90%;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #fff0cc;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+input:focus {
+    outline: none;
+}
+
+#contact-us .submit-btn{
+    margin-top: 30px;
+}
+
+/* contact us responsiveness */
+
+@media screen and (max-width: 1368px) {
+    #contact-us .contact-section {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #contact-us .contact-section {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 576px) {
+    #contact-us{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #contact-us .contact-section {
+        width: 100%;
+    }
+}
 
 
 /* utilities */
@@ -601,6 +700,7 @@ button.order-now:hover {
 .d-none {
     display: none;
 }
-.relative{
+
+.relative {
     position: relative;
 }
