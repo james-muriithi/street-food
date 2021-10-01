@@ -148,7 +148,7 @@ header .nav {
 }
 
 .hero h1>span {
-    color: #eaab1b;
+    color: #535048;
 }
 
 .hero h3 {
@@ -356,9 +356,52 @@ button.order-now:hover {
 /* eat together section */
 
 #eat-together {
-    padding-top: 80px;
-    height: 300px;
+    padding: 80px 20px;
+    flex-wrap: wrap;
 }
+#eat-together .section-image{
+    width: 50%;
+}
+
+#eat-together .section-image img{
+    width: 100%;
+    height: auto;
+}
+
+#eat-together .section-description{
+    /* padding-top: 40px; */
+    width: 30%;
+    text-align: center;
+}
+
+#eat-together .section-description h3{
+    font-size: 40px;
+    color: #ffd77c;
+}
+
+#eat-together .section-description p{
+    font-size: 23px;
+    line-height: 33px;
+    color: #252525;
+}
+
+/* eat together responsive */
+@media screen and (max-width: 768px) {
+    #eat-together div{
+        display: block;
+    }
+    #eat-together .section-image{
+        width: 100%;
+    }
+    #eat-together .section-description{
+        width: 100%;
+    }
+    #eat-together .section-description p{
+        font-size: 20px;
+        line-height: 33px;
+    }
+}
+
 
 /* utilities */
 
@@ -388,4 +431,7 @@ button.order-now:hover {
 
 .d-none {
     display: none;
+}
+.relative{
+    position: relative;
 }
