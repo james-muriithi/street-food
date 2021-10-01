@@ -626,7 +626,7 @@ button.order-now:hover {
     font-size: 18px;
 }
 
-#contact-us input.form-control{
+#contact-us input.form-control {
     margin-top: 30px;
     display: block;
     padding: 15px 30px;
@@ -638,12 +638,14 @@ button.order-now:hover {
     font-weight: 500;
     border: 1px solid #fff0cc;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-sizing: border-box;
 }
+
 input:focus {
     outline: none;
 }
 
-#contact-us .submit-btn{
+#contact-us .submit-btn {
     margin-top: 30px;
 }
 
@@ -660,16 +662,59 @@ input:focus {
         width: 75%;
     }
 }
+
 @media screen and (max-width: 576px) {
-    #contact-us{
+    #contact-us {
         padding-left: 30px;
         padding-right: 30px;
     }
     #contact-us .contact-section {
         width: 100%;
     }
+    #contact-us input.form-control {
+        padding: 15px 20px;
+    }
 }
 
+footer{
+    margin-top: 50px;
+    padding: 50px 20px;
+    background: #f1faec;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer>div{
+    flex: 1 0 50%;
+}
+
+footer .left>div:nth-child(2){
+    margin-left: 50px;
+    border-left: 2px dashed #67984d;
+    padding-left: 30px;
+}
+footer .date-item{
+    margin-bottom: 30px;
+}
+footer .days{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+footer .days+p{
+    margin: 0;
+    color: #757974;
+}
+
+/* footer responsiveness */
+
+@media screen and (max-width: 576px) {
+    footer .left>div:nth-child(2){
+        margin-left: 20px;
+        border-left: 2px dashed #67984d;
+        padding-left: 15px;
+    }
+}
 
 /* utilities */
 
