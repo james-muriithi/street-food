@@ -25,17 +25,14 @@ button
 */
 
 /* import google font */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap'); */
-
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,400;1,700&display=swap');
 /* global styles */
 
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: Nunito, serif;
+    font-family: Poppins, Nunito, serif;
 }
 
 html {
@@ -137,7 +134,7 @@ header .nav {
 
 .hero div {
     margin-top: 0px;
-    max-width: 400px;
+    max-width: 430px;
 }
 
 .hero h1 {
@@ -438,6 +435,7 @@ button.order-now:hover {
 
 .food-card .food-title>h2{
     margin: 0;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -458,7 +456,7 @@ button.order-now:hover {
 
 .food-card .food-description>p{
     text-align: center;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 30px;
     color: #252525;
     margin: 0;
