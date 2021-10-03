@@ -167,8 +167,8 @@ button.order-now:hover {
 .circular-bg {
     height: 1200px;
     width: 1200px;
-    /* #649549 */
-    background-color: #b8e79c;
+    /* background-color: #b8e79c; */
+    background-color: #649549;
     position: absolute;
     top: 0;
     right: 0;
@@ -197,7 +197,8 @@ button.order-now:hover {
 .small-screen-circular-bg {
     height: 800px;
     width: 800px;
-    background-color: #b8e79c;
+    /* background-color: #b8e79c; */
+    background-color: #649549;
     position: absolute;
     top: 0;
     right: 0;
@@ -578,7 +579,8 @@ button.order-now:hover {
 
 #contact-us {
     padding: 50px 20px;
-    background: #fff5dd;
+    /* background: #fff5dd; */
+    background-color: #FFD77C;
 }
 
 #contact-us .section-title {
@@ -657,7 +659,8 @@ input:focus {
 footer{
     margin-top: 50px;
     padding: 50px 20px;
-    background: #f1faec;
+    /* background: #f1faec; */
+    background: #C9ECB5;
     justify-content: space-between;
     flex-wrap: wrap;
 }
