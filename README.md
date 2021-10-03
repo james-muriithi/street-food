@@ -15,11 +15,11 @@ Week 2 Moringa School Independent Project (IP). It's a Street food landing page 
 Download the code and open the index.html file with a browser of your choice.
 
 # Design
-![Project Design](./StreetFood.png)
+![Project Design](./screenshots/StreetFood.png)
 
 # Screenshots
-![Project Screenshot](./screencapture2021-10-02-12_01_37.png)
-![Project Screenshot](./small-screen.png)
+![Project Screenshot](./screenshots/screencapture2021-10-02-12_01_37.png)
+![Project Screenshot](./screenshots/small-screen.png)
 
 # Support and contact
 To make a contribution to the code used or any suggestions please feel free to reach out.
